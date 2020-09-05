@@ -77,15 +77,14 @@ public class ListData extends AppCompatActivity {
                         Model modelku;
                         try {
                             Log.d("hasiljson", "onResponse: " + response.toString());
-                            JSONArray jsonArray = response.getJSONArray("results" +
-                                    "");
+                            JSONArray jsonArray = response.getJSONArray("results");
                             Log.d("hasiljson2", "onResponse: " + jsonArray.toString());
                             for (int i = 0; i < jsonArray.length(); i++) {
 //                                menggunakan perulangan arraylist
                                 modelku = new Model();
                                 JSONObject jsonObject = jsonArray.getJSONObject(i);
                                 modelku.setOriginal_title(jsonObject.getString("original_title"));
-                                modelku.setRelease_date(jsonObject.getString("realease_date"));
+                                modelku.setRelease_date(jsonObject.getString("release_date"));
                                 modelku.setPoster_path("https://image.tmdb.org/t/p/w500"+jsonObject.getString("poster_path"));
                                 modelku.setOverview(jsonObject.getString("overview"));
                                 modelku.setAdult(jsonObject.getBoolean("adult"));
