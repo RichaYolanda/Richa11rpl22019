@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (username.getText().toString().equalsIgnoreCase("nadia") && password.getText().toString().equalsIgnoreCase("000")){
+                if (username.getText().toString().equalsIgnoreCase("richa2") && password.getText().toString().equalsIgnoreCase("22222")){
 //                    saving ke Sp
                     editor = pref.edit();
                     editor.putString("username", username.getText().toString());
