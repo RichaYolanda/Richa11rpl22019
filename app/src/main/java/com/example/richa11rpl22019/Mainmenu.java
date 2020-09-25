@@ -9,6 +9,8 @@ import android.view.View;
 
 public class Mainmenu extends AppCompatActivity {
     CardView menu1;
+    CardView menu2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +20,13 @@ public class Mainmenu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), ListData.class));
+            }
+        });
+        menu2 = (CardView)findViewById(R.id.cardkuu);
+        menu2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), ListDataFavourite.class));
             }
         });
     }

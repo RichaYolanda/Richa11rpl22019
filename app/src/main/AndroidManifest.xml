@@ -15,6 +15,7 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".DetailMovie" />
+        <activity android:name=".ListDataFavourite" />
         <activity android:name=".ListData" />
         <activity android:name=".Controlclass">
             <intent-filter>
